@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CAppClienteServidor/1.0.0": {
+        "dependencies": {
+          "client": "1.0.0",
+          "server": "1.0.0"
+        },
+        "runtime": {
+          "CAppClienteServidor.dll": {}
+        }
+      },
+      "client/1.0.0": {
+        "runtime": {
+          "client.dll": {}
+        }
+      },
+      "server/1.0.0": {
+        "runtime": {
+          "server.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CAppClienteServidor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "client/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "server/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
