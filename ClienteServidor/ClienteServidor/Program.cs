@@ -10,13 +10,17 @@ namespace MainProject
     {
         public static async Task Main(string[] args)
         {
+            // Solicitar datos al usuario
+            Console.Write("Ingrese el puerto para iniciar el socket: ");
+            int port = Convert.ToInt32(Console.ReadLine());
+
             // Se inicia el servidor
             _ = Task.Run(async () =>
             {
                 try
                 {
                     Server server = new Server();
-                    await server.StartAsync(6666);
+                    await server.StartAsync(port);
                 }
                 catch (Exception e)
                 {
@@ -31,7 +35,7 @@ namespace MainProject
             Client client = new Client();
             try
             {
-                await client.StartConnectionAsync("127.0.0.1", 6666);
+                await client.StartConnectionAsync("127.0.0.1", port);
                 string response = await client.SendMessageAsync("hello server");
                 Console.WriteLine($"Server response: {response}");
 
